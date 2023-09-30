@@ -2,8 +2,6 @@ import abc
 
 
 class Figure(abc.ABC):
-    def __init__(self):
-        pass
 
     @staticmethod
     def side_value_check(*args) -> tuple:
@@ -17,7 +15,7 @@ class Figure(abc.ABC):
             if i <= 0 or i >= 1000000000000:
                 return False, i
 
-            return True, i
+        return True, i
 
     @abc.abstractmethod
     def get_figure_area(self):

@@ -1,4 +1,4 @@
-from src.Figure import Figure
+from src.figure import Figure
 
 
 class Triangle(Figure):
@@ -19,7 +19,7 @@ class Triangle(Figure):
         self.side_a = side_a
         self.side_b = side_b
         self.side_c = side_c
-        self.name = f'Square {side_a} x {side_b} x {side_c}'
+        self.name = f'Triangle {side_a} x {side_b} x {side_c}'
         self.area = self.get_figure_area()
         self.perimeter = self.get_perimeter()
 

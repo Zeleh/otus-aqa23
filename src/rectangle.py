@@ -1,4 +1,4 @@
-from src.Figure import Figure
+from src.figure import Figure
 
 
 class Rectangle(Figure):
@@ -44,13 +44,3 @@ class Square(Rectangle):
     def get_perimeter(self) -> float:
         self.perimeter = self.side_a * 4
         return self.perimeter
-
-
-rect1 = Square(2)
-print(rect1.area)
-print(rect1.perimeter)
-rect1.side_a = 4
-rect1.get_figure_area()
-rect1.get_perimeter()
-print(rect1.area)
-print(rect1.perimeter)
